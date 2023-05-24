@@ -6,7 +6,7 @@ n2 = float(input("Insira o Divisor: "))
 r = n1 / n2
 
 if (r!=0):
-    print("O resultado da divisão é: ", r)
+    print("O resultado da divisão é: {} ".format(r))
 else:
     print("O numero é inválido")
 
@@ -21,7 +21,7 @@ vdesc = sal * desc
 if (vdesc >= 318.20):
     print("O valor do desconto é R$ 318,20")
 else:
-    print("O valor do desconto é: R$ ", vdesc)
+    print("O valor do desconto é: R$ {} ".format(vdesc))
 
 #exercicio 3#
 euro = float(input("Insira o valor atual do EURO: "))
@@ -33,7 +33,7 @@ euro = valor * euro
 dolar = valor * dolar
 real = valor * real
 
-print("valor em EURO: ", euro, "valor em DOLAR: ", dolar, "valor em REAL: ", real)
+print("valor em EURO: {}".format(euro), "valor em DOLAR: {}".format(dolar), "valor em REAL:{} ".format(real))
 #exercicio 4#
 age = int(input("Qual a sua idade? "))
 
