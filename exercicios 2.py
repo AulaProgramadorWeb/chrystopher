@@ -24,16 +24,35 @@ else:
     print("O valor do desconto é: R$ {} ".format(vdesc))
 
 #exercicio 3#
-euro = float(input("Insira o valor atual do EURO: "))
-dolar = float(input("Insira o valor atual do DOLAR: "))
-real = float(input("Insira o valor atual do REAL: "))
-valor = float(input("Insira o valor para converter: "))
-
-euro = valor * euro
-dolar = valor * dolar
-real = valor * real
-
-print("valor em EURO: {}".format(euro), "valor em DOLAR: {}".format(dolar), "valor em REAL:{} ".format(real))
+c = str(input("Deseja iniciar o programa?\nS/N\n"))
+while c == "S":
+    print("####Calculadora de Conversão####")
+    euro = float(input("Insira o valor atual do EURO:\n "))
+    dolar = float(input("Insira o valor atual do DOLAR:\n "))
+    real = 1
+    print("Qual opção de conversão voce deseja?")
+    choice = int(input("Euro para Dolar[1], Euro para Real[2], Dolar para Euro[3], Dolar para real[4], Real para euro[5], Real para dolar[6]\n"))
+    valor = float(input("Qual o valor para converter?\n"))
+    if choice == 1:
+        valor = valor * euro
+        valor = valor/dolar
+    elif choice == 2:
+        valor = valor * euro
+        valor = valor/real
+    elif choice == 3:
+        valor = valor * dolar
+        valor = valor/euro
+    elif choice == 4:
+        valor = valor * dolar
+        valor = valor/real
+    elif choice == 5:
+        valor = valor * real
+        valor = valor/euro
+    elif choice == 6:
+        valor = valor * real
+        valor = valor/dolar
+    print("O resultado da conversão é: {} ".format(valor))
+    c = str(input("Deseja iniciar o programa?\nS/N\n"))
 #exercicio 4#
 age = int(input("Qual a sua idade? "))
 
